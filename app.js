@@ -10,3 +10,15 @@ app.listen(3001, () => {
 app.get("/", (request, response, next) => {
   response.sendFile(__dirname + "/view/home-page.html");
 });
+
+app.get("/about", (request, response, next) => {
+  response.sendFile(__dirname + "/view/about-page.html");
+});
+
+app.get("/works", (request, response, next) => {
+  response.sendFile(__dirname + "/view/works-page.html");
+});
+
+app.get("/gallery", (request, response, next) => {
+  response.sendFile(__dirname + "/view/photo-gallery-page.html");
+});
